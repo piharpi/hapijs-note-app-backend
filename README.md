@@ -36,6 +36,5 @@ $ curl -X DELETE http://localhost:3000/notes/{id} -i
 
 ## How to use (Example) Postman
 1. Open Postman
-2. Import collection `postman-testing/Notes API Test.postman_collection.json`
-3. Create environment and insert variable (`noteId, title, tags, body`)
-4. Run Test
+2. Import collection `postman-testing/Notes API Test.postman_collection.json` and `postman-testing/Notes Api Test.postman_environment.json`
+4. Run collection Test
