@@ -11,25 +11,25 @@ $ yarn start
 
 ## How to use (Example)
 ```bash
-# Create note
+# Adding Note
 $ curl -X POST -H "Content-Type: application/json" -d '{
     "title": "Makanan sehat tinggi protein",
     "tags": ["food","healthy", "diet"],
     "body":"Daftar makananan protein tinggi : Telur, Udang, Tuna, Susu"
   }' http://localhost:5000/notes -i
 
-# Get notes
+# Getting All Notes
 $ curl -X GET http://localhost:5000/notes -i
 
-# Get specific note
+# Getting Specified Note
 $ curl -X GET http://localhost:5000/notes/{id} -i
 
-# Edit specific note
+# Edit Note
 $ curl -X PUT -H "Content-Type: application/json" -d '{
     "title": "Makanan sehat untuk diet",
     "tags": ["food","healthy", "diet", "self-awareness"]
   }' http://localhost:5000/notes/{id} -i
 
-# Remove specific note
+# Delete Note
 $ curl -X DELETE http://localhost:5000/notes/{id} -i
 ```
