@@ -6,7 +6,7 @@ Simple note app backend using hapijs(hapi.dev), like my name huh?
 
 ```bash
 $ yarn install
-$ yarn start
+$ yarn dev
 ```
 
 ## How to use (Example) cURL
