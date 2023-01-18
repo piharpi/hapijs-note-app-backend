@@ -1,7 +1,3 @@
-// const notes = [];
-
-// module.exports = notes;
-
 const { nanoid } = require('nanoid');
 
 class NotesService {
@@ -34,7 +30,7 @@ class NotesService {
         return id;
     }
 
-    getNote() {
+    getNotes() {
         return this._notes;
     }
 
@@ -42,7 +38,7 @@ class NotesService {
         const note = this._notes.find(note => note.id === id);
 
         if (!note) {
-            throw new Error('Catatan tidak diteukan.');
+            throw new Error('Catatan tidak ditemukan.');
         }
 
         return note;       

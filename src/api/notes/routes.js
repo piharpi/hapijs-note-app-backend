@@ -1,39 +1,3 @@
-const {
-  addNoteHandler,
-  getAllNottesHandler,
-  getNoteByIdHandler,
-  editNoteByIdHandler,
-  deleteNoteByIdHandler,
-} = require('./handler');
-
-// const routes = [
-//   {
-//     method: 'POST',
-//     path: '/notes',
-//     handler: addNoteHandler,
-//   },
-//   {
-//     method: 'GET',
-//     path: '/notes',
-//     handler: getAllNottesHandler,
-//   },
-//   {
-//     method: 'GET',
-//     path: '/notes/{id}',
-//     handler: getNoteByIdHandler,
-//   },
-//   {
-//     method: 'PUT',
-//     path: '/notes/{id}',
-//     handler: editNoteByIdHandler,
-//   },
-//   {
-//     method: 'DELETE',
-//     path: '/notes/{id}',
-//     handler: deleteNoteByIdHandler,
-//   },
-// ];
-
 const routes = (handler) => [
     {
     method: 'POST',
@@ -43,7 +7,7 @@ const routes = (handler) => [
   {
     method: 'GET',
     path: '/notes',
-    handler: handler.getAllNotesHandler, // getNotesHandler mengembalikan "banyak" note.
+    handler: handler.getNotesHandler, // getNotesHandler mengembalikan "banyak" note.
   },
   {
     method: 'GET',
@@ -53,7 +17,7 @@ const routes = (handler) => [
   {
     method: 'PUT',
     path: '/notes/{id}',
-    handler: handler.putNoteByIdHandler, // putNoteByIdHandler hanya menerima dan mengubah "satu" note.
+    handler: handler.putNoteByIdHandler, //  hanya menerima dan mengubah "satu" note.
   },
   {
     method: 'DELETE',
