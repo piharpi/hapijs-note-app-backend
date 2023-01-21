@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "nodemon ./src/server.js",
     "prod": "NODE_ENV=production node ./src/server.js",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
   },
   "main": "index.js",
   "license": "MIT",
@@ -16,7 +17,10 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.0.0",
+    "dotenv": "^16.0.3",
     "joi": "^17.7.0",
-    "nanoid": "3.x.x"
+    "nanoid": "3.x.x",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.8.0"
   }
 }
