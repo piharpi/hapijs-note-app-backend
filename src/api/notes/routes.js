@@ -1,8 +1,8 @@
 const routes = (handler) => [
-    {
+  {
     method: 'POST',
     path: '/notes',
-    handler: handler.postNoteHandler,  // postNoteHandler hanya menerima dan menyimpan "satu" note.
+    handler: handler.postNoteHandler, // postNoteHandler hanya menerima dan menyimpan "satu" note.
   },
   {
     method: 'GET',
@@ -25,6 +25,5 @@ const routes = (handler) => [
     handler: handler.deleteNoteByIdHandler, // deleteNoteByIdHandler hanya menghapus "satu" note.
   },
 ];
-
 
 module.exports = routes;
