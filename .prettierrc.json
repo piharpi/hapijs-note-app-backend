@@ -6,5 +6,5 @@
   "trailingComma": "all",
   "endOfLine": "lf",
   "bracketSameLine": true,
-  "printWidth": 120
+  "printWidth": 100
 }
