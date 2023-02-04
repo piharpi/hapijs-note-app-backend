@@ -164,6 +164,18 @@
   "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.3.0.tgz"
   "version" "9.3.0"
 
+"@hapi/inert@^7.0.0":
+  "integrity" "sha512-aJvH8rKYF42YY/XZLtq5LOWyk71GRIlcqRgvRyz+XQnj2DTdSZeerUcsxV2kyzJVm9gdemVwHp00foLfKadbMg=="
+  "resolved" "https://registry.npmjs.org/@hapi/inert/-/inert-7.0.0.tgz"
+  "version" "7.0.0"
+  dependencies:
+    "@hapi/ammo" "^6.0.0"
+    "@hapi/boom" "^10.0.0"
+    "@hapi/bounce" "^3.0.0"
+    "@hapi/hoek" "^10.0.0"
+    "@hapi/validate" "^2.0.0"
+    "lru-cache" "^7.10.2"
+
 "@hapi/iron@^7.0.0":
   "integrity" "sha512-NNXJP5fpeiTCPj/4OJG2PWBjWC0/V5D8YggS9RZeuBbfUUuTYE6TbdGqLUsCzIpPI54I8W5dhwEGbRv1CnWQtw=="
   "resolved" "https://registry.npmjs.org/@hapi/iron/-/iron-7.0.0.tgz"
@@ -1381,6 +1393,11 @@
   "version" "6.0.0"
   dependencies:
     "yallist" "^4.0.0"
+
+"lru-cache@^7.10.2":
+  "integrity" "sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA=="
+  "resolved" "https://registry.npmjs.org/lru-cache/-/lru-cache-7.14.1.tgz"
+  "version" "7.14.1"
 
 "make-dir@^3.1.0":
   "integrity" "sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw=="
