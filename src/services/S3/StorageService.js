@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 
 class StorageService {
   constructor() {
-    this._S3 = new AWS.S3();
+    this._S3 = new AWS.S3({ region: `${process.env.AWS_BUCKET_REGION}` });
   }
 
   writeFile(file, meta) {
